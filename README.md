@@ -62,3 +62,37 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Planning
+
+*Entities & Relations*
+**[Users]**
+A user can create and manage as many tasks within any categories as he wants;
+
+**[Tasks]**
+A task must belong to only one user;
+A task will always belong to one category;
+
+**[Categories]**
+A category can have mutiple tasks;
+A category always belongs to a user;
+
+*[Migrations*
+
+**[User]**
+Laravel default;
+
+**[Task]**
+id;
+title;
+date;
+description;
+user_id;
+category_id;
+
+**[Category]**
+id;
+name;
+color;
+user_id;
